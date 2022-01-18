@@ -350,6 +350,30 @@ img {
   display: flex;
   justify-content: space-evenly;
 }
+
+.clients {
+  display: flex;
+}
+.clients > .item {
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  margin-left: 30px;
+  border: 1px solid var(--main-text-color);
+}
+.clients-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  height: 47px;
+}
+.clients > .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* Футер */
 .footer {
   padding-top: 60px;
