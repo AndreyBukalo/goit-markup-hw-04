@@ -81,7 +81,6 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: solid 1px tomato;
 }
 
 /* Шапка и навигация */
@@ -323,6 +322,18 @@ img {
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
 }
+
+.social-site {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  margin-left: 32px;
+  margin-right: 32px;
+  justify-content: center;
+}
+
 .social-site .link {
   display: flex;
   align-items: center;
@@ -331,6 +342,10 @@ img {
   height: 44px;
   border-radius: 50%;
   color: var(--main-text-color);
+}
+
+.social-site .item:not(:first-child) {
+  margin-left: 10px;
 }
 .social-icon {
   fill: currentColor;
@@ -341,14 +356,6 @@ img {
   color: var(--white);
   background-color: var(--accent);
 }
-.social-site {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-}
 
 .clients {
   display: flex;
@@ -356,36 +363,29 @@ img {
 .clients .header {
   margin-bottom: 50px;
 }
-.clients .list {
-}
-.clients-logo {
-  display: flex;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  justify-content: center;
-}
+
 .clients .item:not(:first-child) {
   margin-left: 30px;
 }
-.clients .item {
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-}
+
 .clients-icon {
   fill: currentColor;
 }
 .clients .link {
+  display: flex;
+  width: 170px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 1.5px solid #afb1b8;
+  border-radius: 4px;
   color: var(--main-text-color);
 }
-.clients .item:hover,
-.clients .item:focus {
-  border: 1px solid var(--accent);
-}
+
 .clients .link:hover,
 .clients .link:focus {
+  border: 1.5px solid var(--accent);
   color: var(--accent);
 }
 /* Футер */
@@ -394,14 +394,15 @@ img {
   padding-bottom: 60px;
 }
 .join-text {
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
-  margin-bottom: 20px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--white);
 }
 .footer-join {
   display: flex;
@@ -570,6 +571,7 @@ img {
 }
 
 .projects .link {
+  display: block;
   text-decoration: none;
 }
 .projects .title {
