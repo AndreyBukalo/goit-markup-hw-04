@@ -412,7 +412,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -432,7 +431,10 @@ img {
 .footer {
   background-color: var(--footer-bgc);
 }
-
+.footer .social-site {
+  margin-left: 0;
+  margin-right: 0;
+}
 .footer-conacts {
   margin-right: 70px;
 }
