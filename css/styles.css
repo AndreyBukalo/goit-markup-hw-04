@@ -1,5 +1,6 @@
 :root {
   --main-text-color: #757575; /* Основной цвет текста */
+  --social-link-color: #afb1b8;
   --second-text-color: #212121; /* Вторичный цвет текста  */
   --accent: #2196f3; /* Акцент,цвет кнопок ссылок лого */
   --button-color: #2196f3; /* Цвет кнопок */
@@ -134,7 +135,7 @@ img {
   fill: currentColor;
 }
 .mail-icon:hover {
-  fill: var(--main-text-color);
+  fill: var(--accent);
 }
 
 .contacts .mail,
@@ -148,8 +149,8 @@ img {
   display: flex;
   align-items: center;
   margin-right: 50px;
-
-  color: var(--accent);
+  color: var(--main-text-color);
+  /* color: var(--accent); */
 }
 .contacts .tel {
   display: flex;
@@ -162,13 +163,11 @@ img {
 .tel-icon:hover {
   fill: var(--accent);
 }
+.contacts .mail:hover,
+.contacts .mail:focus,
 .contacts .tel:hover,
 .contacts .tel:focus {
   color: var(--accent);
-}
-.contacts .mail:hover,
-.contacts .mail:focus {
-  color: var(--main-text-color);
 }
 
 /*  Герой и мейн секция */
@@ -176,7 +175,7 @@ img {
   max-width: 1600px;
   margin: 0 auto;
 
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/background.jpg);
 
   background-position: center;
@@ -232,6 +231,7 @@ img {
 .features {
   display: flex;
   align-items: center;
+  padding-bottom: 0;
 }
 
 .features > .item {
@@ -341,7 +341,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--main-text-color);
+  color: var(--social-link-color);
 }
 
 .social-site .item:not(:first-child) {
@@ -380,7 +380,7 @@ img {
   padding-bottom: 16px;
   border: 1.5px solid #afb1b8;
   border-radius: 4px;
-  color: var(--main-text-color);
+  color: var(--social-link-color);
 }
 
 .clients .link:hover,
@@ -562,9 +562,8 @@ img {
 }
 .projects .item:hover,
 .projects .item:focus {
-  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.12), 1px 1px 1px 2px rgba(0, 0, 0, 0.14),
-    1px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects .item {
   flex-basis: calc(100% / 3 - 30px);
@@ -592,10 +591,10 @@ img {
   color: var(--main-text-color);
 }
 
-.projects .title:hover,
+/* .projects .title:hover,
 .projects .title:focus {
   color: var(--accent);
-}
+} */
 
 .content {
   padding: 20px 24px;
